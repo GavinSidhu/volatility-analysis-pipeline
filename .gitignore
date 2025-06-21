@@ -1,11 +1,25 @@
+#env files 
 venv/
-.venv/
-
-__pycache__/
-*.pyc
-
-.idea/
-.vscode/
-*.DS_Store
-
+.venv
 .env
+
+#cached files
+__pycache__/
+*.py[cod]
+
+#coverage files
+.coverage
+.pytest_cache/
+htmlcov/
+
+#IDE files
+.vscode/
+.idea/
+
+#OS files
+.DS_Store
+Thumbs.db
+
+#logs   
+logs/
+*.log
