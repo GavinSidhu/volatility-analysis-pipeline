@@ -24,7 +24,7 @@ data_client = StockHistoricalDataClient(API_KEY, SECRET_KEY)
 
 # Define the parameters for our request - let's get yesterday's data
 # Note: Alpaca free tier data has a 15-minute delay.
-yesterday = datetime.now() - timedelta(days=1)
+yesterday = datetime.now() - timedelta(days=3)
 start_time_utc = yesterday.replace(hour=13, minute=30, second=0, microsecond=0) # 9:30 AM NYC
 end_time_utc = yesterday.replace(hour=13, minute=35, second=0, microsecond=0)   # 9:35 AM NYC
 
