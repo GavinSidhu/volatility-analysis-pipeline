@@ -1,19 +1,16 @@
+import dlt
 import os 
 from datetime import datetime, timedelta
-
 from alpaca.data.historical import StockHistoricalDataClient
-from alpaca.data.requests import StockBarsRequest, DataFeed
+from alpaca.data.requests import StockBarsRequest
 from alpaca.data.timeframe import TimeFrame
 
 import logging
 logger = logging.getLogger('airflow.task')
 
-#from airflow.models.dag import DAG
-#from airflow.operators.python import PythonOperator
-
 from dotenv import load_dotenv
-
 load_dotenv()
+
 
 API_KEY = os.getenv("API_KEY") 
 SECRET_KEY = os.getenv("SECRET_KEY")
